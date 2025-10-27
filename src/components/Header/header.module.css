@@ -1,0 +1,72 @@
+.header{
+    width: 100%;
+    background-color:  rgba(255, 231, 0, 1);
+}
+
+.sectionHeader1{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.divRight{
+    display: flex;
+}
+
+.country, .menu{
+    display: flex;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.logo{
+    display: flex;
+    margin-left: 11px;
+    width: 100%;
+    max-width: 240px;
+}
+
+.sectionHeader2{
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+    gap: 50px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.itemIcon{
+    width: 40px;
+    height: 40px;
+}
+
+.itemText{
+    font: normal normal 700 9px / 12px Montserrat;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+    .sectionHeader2{
+        gap: 30px;
+    }
+}

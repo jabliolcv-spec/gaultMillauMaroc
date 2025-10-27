@@ -1,0 +1,160 @@
+"use client";
+
+import styles from "./card.module.css";
+import { SmartImage } from "../../SmartImage";
+import News from "../../../assets/menu/blog.svg";
+import { Link } from "react-router-dom";
+import Logo from "../../../assets/GaultMillau.svg";
+import { useState } from "react";
+
+
+interface NewsCardProps {
+    news: {
+        theme: string;
+        title: string;
+        slug: string;
+        resume: string;
+        thumbId: string;
+        content?: string;
+    };
+}
+
+export default function SingleNewsCard({ news }: NewsCardProps) {
+    const headerSubtitle = news.theme;
+    const cardHref = `/blog/${news.slug}`;
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModal = () => setIsOpen(true);
+    const closeModal = () => setIsOpen(false);
+
+    return (
+        <article className={styles.uneCard}>
+            <a href={cardHref} aria-label={news.title} title={news.title}>
+                <span className={styles.stretchedLink} aria-hidden="true" />
+            </a>
+
+            <div className={styles.cardHeader}>
+                <div className={styles.headerLeft}>
+                    <span className={styles.iconWrapper}>
+                        <img width={28} height={28} src={News} />
+                    </span>
+                    <div className={styles.headerTexts}>
+                        <span className={styles.headerTitle}>Actualités</span>
+                        {headerSubtitle && (
+                            <span className={styles.headerSubtitle}>{headerSubtitle}</span>
+                        )}
+                    </div>
+                </div>
+                <Link
+                    to={`/blogs/`}
+                    className={styles.moreBtn}
+                    aria-label={news.title}
+                    title={news.title}
+                >
+                    Voir Plus
+                </Link>
+            </div>
+
+            {/* Details */}
+            <div className={styles.details}>
+                <div className={styles.contentColumn}>
+                    <div className={styles.hrSpacer} />
+
+                    <div className={styles.cardPaddingContainer}>
+                        <span className={`${styles.cardTitle} ${styles.clamp3}`}>
+                            {news.title}
+                        </span>
+                    </div>
+
+                    <div className={styles.cardPaddingContainer}>
+                        <span
+                            className={`${styles.synopsis}`}
+                        >
+                            {news.resume}
+                        </span>
+                    </div>
+
+                    <div className={styles.hrSpacer} />
+
+                    <div
+                        className={`${styles.cardPaddingContainer} ${styles.buttonsContainer}`}
+                    >
+                        <Link
+                            to={cardHref}
+                            className={styles.figmaCardButton}
+                            aria-label={news.title}
+                            title={news.title}
+                        >
+                            <span className={`text-uppercase ${styles.ellipsis}`}>
+                                Lire Plus
+                            </span>
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Thumbnail */}
+                <div className={styles.thumbnailWrapper}>
+                    <div className={styles.thumbnailFrame}>
+                        <SmartImage
+                            id={news.thumbId}
+                            alt={news.title}
+                            width={700}
+                            height={464}
+                            fit="cover"
+                            lazyload
+                        />
+                        <button className={styles.playButton} onClick={openModal} aria-label="Lire la vidéo">
+                            ▶
+                        </button>
+                    </div>
+                </div>
+
+                {news.theme && (
+                    <span className={styles.themeTag}>{news.theme}</span>
+                )}
+            </div>
+
+            {isOpen && (
+                <div
+                    className={`${styles.triptychmodal} modal fade show`}
+                    style={{ display: "block" }}
+                    aria-modal="true"
+                    role="dialog"
+                >
+                    <div className={`${styles["modal-dialog"]} ${styles["modal-fullscreen"]}`}>
+                        <div className={styles["modal-content"]}>
+                            <div className={styles["modal-header"]}>
+                                <img className={styles.logoImg} src={Logo} style={{ maxWidth: "140px" }} />
+                                <button
+                                    type="button"
+                                    className={styles["btn-close"]}
+                                    aria-label="Close"
+                                    title="Close"
+                                    onClick={closeModal}
+                                >
+                                    X
+                                </button>
+                            </div>
+
+                            <div className={styles["modal-body"]}>
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/Io19mzq83r8?autoplay=1&loop=1&playlist=Io19mzq83r8&mute=1&controls=1"
+                                    title="Communiqué de presse Gault&Millau Maroc"
+                                    className={styles.videoPlayer}
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    frameBorder="0"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                ></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </article>
+    );
+}
+
