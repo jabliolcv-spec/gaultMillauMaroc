@@ -3,29 +3,18 @@ import style from "./home.module.css";
 import SingleNewsCard from '../../components/cards/UneCard';
 import Services from '../../components/Services';
 import LicensedCountries from '../../components/LicensedContries';
-import Logo from "../../assets/GaultMillau.svg";
+import Logo from "@/assets/GaultMillau.svg";
 import Footer from '../../components/Footer';
+import ImgPresident from '@/assets/president.jpg';
+import { NewsCardData } from "../../Data/NewsData.ts";
 
-interface NewsCardProps {
-    id: string;
-    theme: string;
-    title: string;
-    slug: string;
-    resume: string;
-    thumbId: string;
-    content?: string;
-}
-
-const NewsCardData: NewsCardProps = {
-    id: "news-une-1",
-    title: "Nouveau guide Gault&Millau : cap sur le Maroc",
-    resume: "Gault&Millau poursuit son extension internationale. Un nouveau guide sera lancé dès mai 2026 pour récompenser les plus belles tables, les chefs remarquables et les prestigieux établissements du Maroc",
-    slug: "nouveau-guide-gault-and-millau-cap-sur-le-maroc",
-    thumbId: "046b4a0f-827b-4e89-9d16-0b2e9c4de3fa",
-    theme: "Actus & Rendez-vous",
-};
 
 export const countries = [
+  {
+    name: "Morocco",
+    image: "https://assets.gaultmillau.com/assets/21bf4eaa-0235-4934-ab59-de39cfb9a73f?width=125&height=125&format=webp",
+    url: "https://www.gaultmillau.ma",
+  },
   {
     name: "Austria",
     image: "https://assets.gaultmillau.com/assets/f768ea77-849a-428f-aa2d-43bdd9795b0a?width=125&height=125&format=webp",
@@ -82,11 +71,6 @@ export const countries = [
     url: "https://www.gaultmillau.lu",
   },
   {
-    name: "Morocco",
-    image: "https://assets.gaultmillau.com/assets/21bf4eaa-0235-4934-ab59-de39cfb9a73f?width=125&height=125&format=webp",
-    url: "https://www.gaultmillau.ma",
-  },
-  {
     name: "Netherlands",
     image: "https://assets.gaultmillau.com/assets/cbbf3667-e71e-40f0-a919-cc1787915527?width=125&height=125&format=webp",
     url: "https://www.gault-millau.nl",
@@ -123,78 +107,94 @@ export const countries = [
   },
 ];
 
-
-
 const Home = () => {
-    console.log(NewsCardData);
-    return (
-        <>
-            <Header />
-            <section className={style.mainSection}>
-                <SingleNewsCard news={NewsCardData} />
-            </section>
-            <section className={style.bgWhite}>
-                <div className={style.titleContainer}>
-                    <h2 className={style.titleSection}>Le mot du président</h2>
-                    <div className={style.underlineSection}></div>
-                </div>
+  return (
+    <>
+      <Header />
+      <section className={style.mainSection}>
+        <SingleNewsCard news={NewsCardData[0]} />
+      </section>
+      <section className={style.bgWhite}>
+        <div className={style.titleContainer}>
+          <h2 className={style.titleSection}>Le mot du président</h2>
+          <div className={style.underlineSection}></div>
+        </div>
 
-                <div className={style.container}>
-                    <div className={style.imageWrapper}>
-                        <img
-                            src="https://assets.gaultmillau.com/assets/046b4a0f-827b-4e89-9d16-0b2e9c4de3fa?transforms=%5B%5B%22resize%22%2C%7B%22width%22%3A700%2C%22height%22%3A464%2C%22fit%22%3A%22cover%22%7D%5D%5D&format=avif"
-                            alt="Patrick Hayoun"
-                            className={style.image}
-                        />
-                    </div>
+        <div className={style.container}>
+          <div className={style.imageWrapper}>
+            <img
+              src={ImgPresident}
+              alt="Steve Berdah"
+              className={style.image}
+            />
+          </div>
 
-                    <div className={style.content}>
-                        <div className={style.quoteIcon}>“</div>
+          <div className={style.content}>
+            <div className={style.quoteIcon}>“</div>
 
-                        <p>
-                            Je suis ici pour partir à la découverte des jeunes talents culinaires marocains. Nous avons choisi de nous concentrer sur le Maroc, un pays à la richesse gastronomique exceptionnelle. Notre objectif est de juger et de mettre en valeur la véritable cuisine marocaine, dans toute sa diversité et son authenticité. 
-                        </p>
-                        <p>
-                            <strong>« À travers Gault&Millau Maroc »</strong>,
-                        </p>
-                        <p>
-                            je souhaite mettre en lumière la créativité, le savoir-faire et la passion qui animent les chefs de ce pays, et faire rayonner la gastronomie marocaine au-delà de ses frontières.
-                        </p>
-                        <div className={style.bottomSection}>
-                            <div>
-                                <h3 className={style.name}>M. Steve BERDAH</h3>
-                                <div className={style.underline}></div>
-                                <p className={style.role}>
-                                    Président-Directeur Général<br />
-                                    Gault&amp;Millau Maroc
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className={style.bgWhiteSmoke}>
-                <div className={style.titleContainer}>
-                    <h2 className={style.titleSection}>Nos Services</h2>
-                    <div className={style.underlineSection}></div>
-                </div>
-                <Services/>
-            </section>
-            <section>
-                <div className={style.titleContainer}>
-                    <h2 className={style.titleSection}>Entrez dans le monde de la gastronomie</h2>
-                    <div className={style.underlineSection}></div>
-                </div>
-                <div className={style.divLogo}>
-                    <img src={Logo} alt="logo Gault et Millau"/>
-                </div>
-                <LicensedCountries countries={countries}/>
-            </section>
-            <footer>
-                <Footer/>
-            </footer>
-        </>
-    )
+            <p>
+              Je suis ici pour partir à la découverte des jeunes talents culinaires marocains. Nous avons choisi de nous concentrer sur le Maroc, un pays à la richesse gastronomique exceptionnelle. Notre objectif est de juger et de mettre en valeur la véritable cuisine marocaine, dans toute sa diversité et son authenticité.
+            </p>
+            <p>
+              <strong>« À travers Gault&Millau Maroc »</strong>,
+            </p>
+            <p>
+              je souhaite mettre en lumière la créativité, le savoir-faire et la passion qui animent les chefs de ce pays, et faire rayonner la gastronomie marocaine au-delà de ses frontières.
+            </p>
+            <div className={style.bottomSection}>
+              <div>
+                <h3 className={style.name}>M. Steve BERDAH</h3>
+                <div className={style.underline}></div>
+                <p className={style.role}>
+                  Président-Directeur Général<br />
+                  Gault&amp;Millau Maroc
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={style.bgWhiteSmoke}>
+        <div className={style.titleContainer}>
+          <h2 className={style.titleSection}>Nos Services</h2>
+          <div className={style.underlineSection}></div>
+        </div>
+        <Services />
+      </section>
+      <section className={style.videoContainer}>
+        <div className={style.titleContainer}>
+          <h2 className={style.titleSection}>Kit Média et informations presse</h2>
+          <div className={style.underlineSection}></div>
+        </div>
+        <a href="/media/KIT_MEDIA_GAULTMILLAU_MA.pdf" target="_blank" rel="noopener noreferrer" className={style.kitMedia}>
+          Ouvrir le Kit Média (PDF)
+        </a>
+        <video
+          src="https://www.gaultmillau.org/wp-content/uploads/2023/03/Video-institutionnelle-FR.mp4"
+          autoPlay
+          loop
+          controls
+          muted
+          controlsList="nodownload"
+          style={{ width: "100%", height: "100%" }}
+        />
+
+      </section>
+      <section>
+        <div className={style.titleContainer}>
+          <h2 className={style.titleSection}>Entrez dans le monde de la gastronomie</h2>
+          <div className={style.underlineSection}></div>
+        </div>
+        <div className={style.divLogo}>
+          <img src={Logo} alt="logo Gault et Millau" />
+        </div>
+        <LicensedCountries countries={countries} />
+      </section>
+      <footer>
+        <Footer />
+      </footer>
+    </>
+  )
 }
 
 export default Home

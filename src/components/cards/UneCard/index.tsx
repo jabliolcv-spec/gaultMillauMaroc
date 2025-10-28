@@ -1,12 +1,22 @@
 "use client";
 
 import styles from "./card.module.css";
-import { SmartImage } from "../../SmartImage";
 import News from "../../../assets/menu/blog.svg";
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/GaultMillau.svg";
 import { useState } from "react";
 
+import communique_presse from "@/assets/communique_presse.png";
+import lahcen_hafid from "@/assets/lahcen_hafid.jpg";
+import gala from "@/assets/gala.png";
+import SmartImage from "../../SmartImage";
+
+
+const images: Record<string, string> = {
+  communique_presse,
+  lahcen_hafid,
+  gala,
+};
 
 interface NewsCardProps {
     news: {
@@ -16,6 +26,7 @@ interface NewsCardProps {
         resume: string;
         thumbId: string;
         content?: string;
+        videoUrl?:string;
     };
 }
 
@@ -47,7 +58,7 @@ export default function SingleNewsCard({ news }: NewsCardProps) {
                     </div>
                 </div>
                 <Link
-                    to={`/blogs/`}
+                    to={cardHref}
                     className={styles.moreBtn}
                     aria-label={news.title}
                     title={news.title}
@@ -96,17 +107,11 @@ export default function SingleNewsCard({ news }: NewsCardProps) {
                 {/* Thumbnail */}
                 <div className={styles.thumbnailWrapper}>
                     <div className={styles.thumbnailFrame}>
-                        <SmartImage
-                            id={news.thumbId}
-                            alt={news.title}
-                            width={700}
-                            height={464}
-                            fit="cover"
-                            lazyload
-                        />
-                        <button className={styles.playButton} onClick={openModal} aria-label="Lire la vidéo">
-                            ▶
+                        <SmartImage thumbId={news.thumbId} title={news.title}  width={700} height={464}/>
+                        {news.videoUrl && <button className={styles.playButton} onClick={openModal} aria-label="Lire la vidéo">
+                                     ▶
                         </button>
+                        }
                     </div>
                 </div>
 
@@ -115,7 +120,7 @@ export default function SingleNewsCard({ news }: NewsCardProps) {
                 )}
             </div>
 
-            {isOpen && (
+            {isOpen && news.videoUrl && (
                 <div
                     className={`${styles.triptychmodal} modal fade show`}
                     style={{ display: "block" }}
@@ -141,8 +146,8 @@ export default function SingleNewsCard({ news }: NewsCardProps) {
                                 <iframe
                                     width="100%"
                                     height="100%"
-                                    src="https://www.youtube.com/embed/Io19mzq83r8?autoplay=1&loop=1&playlist=Io19mzq83r8&mute=1&controls=1"
-                                    title="Communiqué de presse Gault&Millau Maroc"
+                                    src={news.videoUrl || ""}
+                                    title={news.title}
                                     className={styles.videoPlayer}
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     frameBorder="0"

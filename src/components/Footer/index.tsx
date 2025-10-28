@@ -30,22 +30,21 @@ export default function Footer() {
         {/* Colonne 2 */}
         <div className={styles.column}>
           <h4>Notre sélection</h4>
-          <a href="/fr/search/restaurant">Restaurants</a>
-          <a href="/fr/search/hotel">Hôtels</a>
-          <a href="/fr/search/artisan">Artisans</a>
-          <a href="/fr/search/artisan">Jeunes Talent</a>
+          <a href="/Restaurant">Restaurants</a>
+          <a href="/Hotels">Hôtels</a>
+          <a href="/Artisans">Artisans</a>
+          <a href="/Talent">Jeunes Talent</a>
         </div>
 
         {/* Colonne 3 */}
         <div className={styles.column}>
           <h4>Contact</h4>
-          <p>
-            37-39 rue Boissière<br />
-            75016 Paris<br />
-            France
+          <p> 81 BD MOULAY HASSAN I, <br/>
+            6ÈME ÉTAGE,<br />
+            CASABLANCA, MAROC<br />
           </p>
-          <p>Appeler : 01 41 40 99 80</p>
-          <a href="#contactModal">Contactez-nous</a>
+          <p>Appeler : (+212)6.64.08.21.88</p>
+          <a href="mailto:sberdah@gaultmillau.ma">Contactez-nous</a>
         </div>
 
         {/* Colonne 4 */}
@@ -56,9 +55,9 @@ export default function Footer() {
             <a href="https://www.linkedin.com/company/gault&millau/mycompany/?viewAsMember=true" target="_blank"><img src={Mail} alt="logo Mail"/></a>
           </div>
           <p>
-            <a href="/fr/newsletterSubscription">Inscrivez-vous à notre newsletter</a>
+            <a href="/media/KIT_MEDIA_GAULTMILLAU_MA.pdf" target="_blank" rel="noopener noreferrer">Le Kit Média (PDF)</a>
           </p>
-          <a href="/fr/newsletters">Toutes les newsletters</a>
+          <a href="mailto:sberdah@gaultmillau.ma">Toutes les newsletters</a>
           <p className={styles.copy}>
             Gault&Millau © 2025<br />Tous droits réservés
           </p>

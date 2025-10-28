@@ -1,0 +1,17 @@
+.mainSection{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.newsContainer{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 950px) {
+  .newsContainer{
+    width: 100%;
+    padding: 20px;
+  }
+}

@@ -44,6 +44,12 @@ margin: 0 auto;
   background: #fff;
 }
 
+.videoContainer{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
 .imageWrapper {
   flex: 1;
   display: flex;
@@ -130,6 +136,22 @@ margin: 0 auto;
     background-color: rgb(229, 229, 229);
 }
 
+.kitMedia{
+  color: black;
+  background-color: #ffe100;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  width: auto;
+  max-width: 240px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
 @media screen and (max-width: 950px) {
   .container {
     width: 100%;
@@ -137,6 +159,10 @@ margin: 0 auto;
     text-align: center;
     gap: 30px;
   }
+
+  .videoContainer{
+  width:  100%;
+}
 
   .bottomSection {
     flex-direction: column;
@@ -150,6 +176,11 @@ margin: 0 auto;
   .image{
     width: 100%;
   }
+
+  .titleSection {
+  font-size: 30px;
+}
+
 }
 
 .divLogo{

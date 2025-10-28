@@ -48,6 +48,8 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .itemIcon{
@@ -69,4 +71,22 @@
     .sectionHeader2{
         gap: 30px;
     }
+}
+
+@media screen and (max-width: 500px) {
+.title{
+    font-size:30px;
+    line-height: 40px;
+}
+
+.sectionHeader1{
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    margin-left: 11px;
+    width: 100%;
+    max-width: 190px;
+}
 }

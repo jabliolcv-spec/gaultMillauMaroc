@@ -1,0 +1,116 @@
+.mainSection{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.Container{
+    background-color: white;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.Container h2{
+    font-size:50px;
+    line-height: 60px;
+    font-weight: 900;
+    font-family: var(--the-tenth-title-font-family);
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+.Container p{
+    font-family: Montserrat, Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding: 15px 0;
+}
+
+.Container h3{
+    font-size:30px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--the-tenth-title-font-family);
+    padding: 20px 0;
+}
+
+
+.toques {
+    align-items: center;
+    background-color: var(--GMI-outlinedyellow);
+    border-radius: var(--GMI-overlayradius);
+    display: flex;
+    flex: 0 0 auto;
+    gap: 3px;
+    height: 30px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100px;
+    color : var(--GMI-black)
+}
+
+
+.toques.gold {
+    background-color: #fff;
+    border: 2px solid;
+    border-color: var(--GMI-toquegoldcolor)
+}
+
+.toques.sponsored {
+    background-color: rgb(171, 214, 245);
+    border: unset
+}
+
+.toques .toque-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color : var(--GMI-black)
+}
+
+.toques .toque-wrapper>span {
+    font-family: var(--news-categories-yellow-font-family);
+    font-size: var(--news-categories-yellow-font-size);
+    font-style: var(--news-categories-yellow-font-style);
+    font-weight: bold;
+    letter-spacing: var(--news-categories-yellow-letter-spacing);
+    line-height: var(--news-categories-yellow-line-height);
+    text-align: center
+}
+
+.toques .toque {
+    all: unset;
+    position: relative
+}
+
+.toques.gold .toque {
+    all: unset;
+    position: relative;
+    stroke-width: .2px;
+    stroke: var(--GMI-toquegoldcolor)
+}
+
+.toques.sm .toque {
+    height: 16px
+}
+
+ul li{
+    list-style-type: none;
+    margin-left: 50px;
+    padding: 10px 0;
+}
+ul li strong{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 950px) {
+  .Container{
+    width: 100%;
+    padding: 20px;
+  }
+}

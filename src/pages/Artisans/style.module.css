@@ -1,0 +1,54 @@
+.mainSection{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.Container{
+    background-color: white;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.Container h2{
+    font-size:50px;
+    line-height: 60px;
+    font-weight: 900;
+    font-family: var(--the-tenth-title-font-family);
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+.Container p{
+    font-family: Montserrat, Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding: 15px 0;
+}
+
+.Container h3{
+    font-size:30px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--the-tenth-title-font-family);
+    padding: 20px 0;
+}
+
+ul li{
+    list-style-type: none;
+    margin-left: 50px;
+    padding: 10px 0;
+}
+ul li strong{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 950px) {
+  .Container{
+    width: 100%;
+    padding: 20px;
+  }
+}

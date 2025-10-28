@@ -1,8 +1,12 @@
-import { UtensilProps } from "@/types/Utensils";
+interface UtensilProps {
+    id: string;
+    title: string;
+    slug: string;
+    code?: string;
+    description: string;
+    thumbId: string;
+}
 
-/**
- * Données factices pour les ustensiles de cuisine
- */
 export const UtensilsData: UtensilProps[] = [
   {
     id: "ute_001",
@@ -11,7 +15,6 @@ export const UtensilsData: UtensilProps[] = [
     thumbId: "cafaee49-c268-4bed-b865-e8ecb77d87e5",
     slug:"les_necessaires",
     code:"SKU973637",
-    thumbIdOver: "0eda28e8-1c2b-4097-9b0a-9679da2b9620"
   },
   {
     id: "ute_002",
@@ -20,7 +23,6 @@ export const UtensilsData: UtensilProps[] = [
     code:"SKU0987373",
     description: "Parfait pour monter des blancs et émulsionner sauces et crèmes.",
     thumbId: "a98a056b-fba0-4f56-af16-d1a9eb9ee44a",
-    thumbIdOver:"8b0d6266-5347-462b-b1fb-282924dca08e"
   },
   {
     id: "ute_003",
