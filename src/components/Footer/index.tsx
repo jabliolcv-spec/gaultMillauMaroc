@@ -14,19 +14,19 @@ export default function Footer() {
             <img src={Logo} width={180} height={37} alt="Gault&Millau France" />
           </div>
           <div className={styles.links}>
-            <Link to="https://www.gaultmillau.org" target="_blank">A propos</Link>
-            <Link to="/Infos/CGV">Conditions Générales De Vente</Link>
-            <Link to="/Infos/politique-de-confidentialite">Politique de confidentialité</Link>
+            <Link to="https://www.gaultmillau.org" target="_blank"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>A propos</Link>
+            <Link to="/Infos/CGV"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Conditions Générales De Vente</Link>
+            <Link to="/Infos/politique-de-confidentialite"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Politique de confidentialité</Link>
           </div>
         </div>
 
         {/* Colonne 2 */}
         <div className={styles.column}>
           <h4>Notre sélection</h4>
-          <Link to="/Restaurant">Restaurants</Link>
-          <Link to="/Hotels">Hôtels</Link>
-          <Link to="/Artisans">Artisans</Link>
-          <Link to="/Talent">Jeunes Talent</Link>
+          <Link to="/Restaurant"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Restaurants</Link>
+          <Link to="/Hotels"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Hôtels</Link>
+          <Link to="/Artisans"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Artisans</Link>
+          <Link to="/Talent"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Jeunes Talent</Link>
         </div>
 
         {/* Colonne 3 */}

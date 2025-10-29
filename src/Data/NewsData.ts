@@ -12,7 +12,7 @@ export interface NewsCardProps {
 export const NewsCardData: NewsCardProps[] = [
     {
         id: "news-1",
-        title: "Le Nouveau guide Gault&Millau Maroc",
+        title: "Lumière sur la gastronomie marocaine",
         resume:
             "Gault&Millau poursuit son extension internationale. Un nouveau guide sera lancé dès mai 2026 pour récompenser les plus belles tables, les chefs remarquables et les prestigieux établissements du Maroc",
         slug: "nouveau-guide-gault-and-millau-cap-sur-le-maroc",
@@ -72,7 +72,7 @@ En attendant la parution de sa première édition, en mai 2026, le Guide Gault &
 <ul>
   <li>Remise de 100 packages de 3 éditions*</li>
   <li>Publication du logo sur notre page partenaire pendant 1 an</li>
-  <li>Double-page de publicité dans le Guide France 2025, 1er cahier</li>
+  <li>Double-page de publicité dans le Guide Maroc 2025, 1er cahier</li>
   <li>Mention de la marque dans le communiqué de presse de la Cérémonie</li>
   <li>Publireportage sur notre site internet – article + vidéo</li>
   <li>Réel sponsorisé sur les réseaux sociaux pour relayer le publireportage (Instagram, Facebook)</li>
@@ -104,9 +104,9 @@ En attendant la parution de sa première édition, en mai 2026, le Guide Gault &
 </ul>
 <p><strong>Visibilité média :</strong></p>
 <ul>
-  <li>Remise de 250 Guides France 2025</li>
+  <li>Remise de 250 Guides Maroc 2025</li>
   <li>Publication du logo sur notre page partenaire pendant 1 an</li>
-  <li>Page de publicité dans le Guide France 2025, format pleine page, 1er cahier</li>
+  <li>Page de publicité dans le Guide Maroc 2025, format pleine page, 1er cahier</li>
   <li>Mention de la marque dans le communiqué de presse de la Cérémonie</li>
   <li>Publireportage sur notre site internet – article</li>
   <li>Post sponsorisé sur les réseaux sociaux pour relayer le publireportage (Instagram, Facebook)</li>
@@ -130,9 +130,9 @@ En attendant la parution de sa première édition, en mai 2026, le Guide Gault &
 </ul>
 <p><strong>Visibilité média :</strong></p>
 <ul>
-  <li>Remise de 100 Guides France 2025</li>
+  <li>Remise de 100 Guides Maroc 2025</li>
   <li>Publication du logo sur notre page partenaire pendant 1 an</li>
-  <li>Page de publicité dans le Guide France 2025, format pleine page</li>
+  <li>Page de publicité dans le Guide Maroc 2025, format pleine page</li>
   <li>Mention de la marque dans le communiqué de presse de la Cérémonie</li>
 </ul>
 <hr />
@@ -144,9 +144,9 @@ En attendant la parution de sa première édition, en mai 2026, le Guide Gault &
 </ul>
 <p><strong>Visibilité média :</strong></p>
 <ul>
-  <li>Remise de 50 Guides France 2025</li>
+  <li>Remise de 50 Guides Maroc 2025</li>
   <li>Publication du logo sur notre page partenaire pendant 1 an</li>
-  <li>Page de publicité dans le Guide France 2025, format pleine page</li>
+  <li>Page de publicité dans le Guide Maroc 2025, format pleine page</li>
 </ul>`
     },
     {
