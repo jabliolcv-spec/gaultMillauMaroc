@@ -72,6 +72,30 @@
         gap: 30px;
     }
 }
+@media (max-width: 850px) {
+  .sectionHeader2 {
+    display: flex;
+    flex-wrap: nowrap;       
+    overflow-x: auto;       
+    overflow-y: hidden;
+    justify-content: flex-start;
+    gap: 25px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 20px;
+    width: 90%;
+    border-bottom: 3px solid rgb(222, 9, 9);
+  }
+
+  
+
+  .item {
+    flex: 0 0 auto; 
+    min-width: 70px; 
+  }
+}
+
+
 
 @media screen and (max-width: 500px) {
 .title{

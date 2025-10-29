@@ -9,7 +9,7 @@ import ImgPresident from '@/assets/president.jpg';
 import { NewsCardData } from "../../Data/NewsData.ts";
 
 
-export const countries = [
+const countries = [
   {
     name: "Morocco",
     image: "https://assets.gaultmillau.com/assets/21bf4eaa-0235-4934-ab59-de39cfb9a73f?width=125&height=125&format=webp",
@@ -141,6 +141,8 @@ const Home = () => {
             <p>
               je souhaite mettre en lumière la créativité, le savoir-faire et la passion qui animent les chefs de ce pays, et faire rayonner la gastronomie marocaine au-delà de ses frontières.
             </p>
+            <p className={style.contactLink}>Pour toute question ou collaboration, n’hésitez pas à nous <a href="mailto:sberdah@gaultmillau.ma" target="_blank" rel="noopener noreferrer">contacter</a></p>
+            <div className={style.underline}></div>
             <div className={style.bottomSection}>
               <div>
                 <h3 className={style.name}>M. Steve BERDAH</h3>

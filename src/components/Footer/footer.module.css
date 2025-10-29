@@ -51,7 +51,7 @@
 }
 
 .column a:hover {
-  color: #e1b000;
+  color: #ff0000;
 }
 
 .column p {
@@ -59,26 +59,6 @@
   line-height: 1.6;
 }
 
-.socials {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-.socials a {
-  color: #000;
-  font-size: 18px;
-  transition: opacity 0.2s;
-}
-
-.socials a:hover {
-  opacity: 0.7;
-}
-
-.socials a img{
-  width: 25px;
-  height: 25px;
-}
 
 .copy {
   font-size: 12px;

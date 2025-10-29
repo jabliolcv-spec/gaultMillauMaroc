@@ -3,10 +3,7 @@
 import React from "react";
 import styles from "./footer.module.css";
 import Logo from "../../assets/GaultMillau.svg"; 
-import Facebook from "../../assets/socialIcon/facebook.svg";
-import Insta from "../../assets/socialIcon/instagram.svg";
-import Mail from "../../assets/socialIcon/Mail.svg";
-
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -20,20 +17,19 @@ export default function Footer() {
             <img src={Logo} width={180} height={37} alt="Gault&Millau France" />
           </div>
           <div className={styles.links}>
-            <a href="https://www.gaultmillau.org" target="_blank">A propos</a>
-            <a href="/fr/pages/legal-notice-fr">Mentions légales</a>
-            <a href="/fr/pages/cgu">CGU</a>
-            <a href="/fr/pages/politique-de-confidentialite">Politique de confidentialité</a>
+            <Link to="https://www.gaultmillau.org" target="_blank">A propos</Link>
+            <Link to="/Infos/CGV">Conditions Générales De Vente</Link>
+            <Link to="/Infos/politique-de-confidentialite">Politique de confidentialité</Link>
           </div>
         </div>
 
         {/* Colonne 2 */}
         <div className={styles.column}>
           <h4>Notre sélection</h4>
-          <a href="/Restaurant">Restaurants</a>
-          <a href="/Hotels">Hôtels</a>
-          <a href="/Artisans">Artisans</a>
-          <a href="/Talent">Jeunes Talent</a>
+          <Link to="/Restaurant">Restaurants</Link>
+          <Link to="/Hotels">Hôtels</Link>
+          <Link to="/Artisans">Artisans</Link>
+          <Link to="/Talent">Jeunes Talent</Link>
         </div>
 
         {/* Colonne 3 */}
@@ -43,23 +39,16 @@ export default function Footer() {
             6ÈME ÉTAGE,<br />
             CASABLANCA, MAROC<br />
           </p>
-          <p>Appeler : (+212)6.64.08.21.88</p>
           <a href="mailto:sberdah@gaultmillau.ma">Contactez-nous</a>
+          <a href="tel:+212664082188">Appeler : (+212)6.64.08.21.88</a>
         </div>
 
         {/* Colonne 4 */}
         <div className={styles.column}>
-          <div className={styles.socials}>
-            <a href="https://www.facebook.com/gaultmillauFR" target="_blank"><img src={Facebook} alt="logo Facebook"/></a>
-            <a href="https://www.instagram.com/gaultetmillaufr" target="_blank"><img src={Insta} alt="logo Instagram"/></a>
-            <a href="https://www.linkedin.com/company/gault&millau/mycompany/?viewAsMember=true" target="_blank"><img src={Mail} alt="logo Mail"/></a>
-          </div>
-          <p>
-            <a href="/media/KIT_MEDIA_GAULTMILLAU_MA.pdf" target="_blank" rel="noopener noreferrer">Le Kit Média (PDF)</a>
-          </p>
-          <a href="mailto:sberdah@gaultmillau.ma">Toutes les newsletters</a>
+          <h4>Le Kit Media</h4>
+          <a href="/media/KIT_MEDIA_GAULTMILLAU_MA.pdf" target="_blank" rel="noopener noreferrer">Ouvrir Le Kit Média (PDF)</a>
           <p className={styles.copy}>
-            Gault&Millau © 2025<br />Tous droits réservés
+            Gault&Millau Maroc © 2025<br />Tous droits réservés
           </p>
         </div>
       </div>

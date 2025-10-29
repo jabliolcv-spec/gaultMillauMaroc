@@ -1,6 +1,7 @@
 import Header from "../../components/Header/header";
 import style from "../style.module.css";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 const Riyad = () => {
     return (
@@ -67,6 +68,14 @@ const Riyad = () => {
                         <strong>Contactez dès aujourd’hui nos équipes</strong> pour présenter votre établissement,
                         découvrir nos formules de partenariat et rejoindre la sélection officielle des plus beaux Riads Gault&amp;Millau Maroc.
                     </p>
+
+                    <h3>Liens Utiles</h3>
+                    <div className={style.links}>
+                        <Link to="https://www.gaultmillau.org" target="_blank">A propos</Link>
+                        <Link to="/Infos/CGV">Conditions Générales De Vente</Link>
+                        <Link to="/Infos/politique-de-confidentialite">Politique de confidentialité</Link>
+                        <a href="/media/KIT_MEDIA_GAULTMILLAU_MA.pdf" target="_blank" rel="noopener noreferrer">Le Kit Média (PDF)</a>
+                    </div>
                 </div>
             </main>
             <Footer />

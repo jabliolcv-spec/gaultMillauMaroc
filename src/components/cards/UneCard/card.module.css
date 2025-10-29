@@ -114,7 +114,7 @@
   background-color: var(--GMI-outlinedyellow);
   border-radius: 8px;
   left: 50%;
-  top: 215px;
+  top: 225px;
   transform: translateX(-50%);
   font-family: var(--news-categories-yellow-font-family);
   font-size: var(--news-categories-yellow-font-size);
@@ -419,6 +419,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   font-style: var(--card-title-font-style)
+  
 }
 
 .clamp3 {
@@ -575,7 +576,7 @@
   }
 
   .uneCard {
-    height: 520px;
+    height: 510px;
     width: 300px;
     padding-bottom: 20px !important;
   }
@@ -636,8 +637,16 @@
 
   .stretchedLink {
     width: 300px;
-    height: 520px;
+    height: 510px;
   }
+
+  .playButton{
+    padding: 5px;
+  }
+
+  .cardTitle {
+  margin-top: 10px;
+}
 }
 
 
@@ -688,7 +697,7 @@
 
   .stretchedLink {
     width: 100%;
-    height: 520px;
+    height: 510px;
   }
 }
 
@@ -706,7 +715,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.419);
+  background-color: rgba(0, 0, 0, 0.6);
   border: none;
   display: flex;
   justify-content: center;
@@ -719,8 +728,8 @@
 }
 
 .playButton:hover {
-  color: white;
-  transform: translate(-50%, -50%) scale(1.1);
+  background-color: rgba(222, 190, 6, 0.8);
+  transform: translate(-50%, -50%) scale(1.11);
 }
 
 

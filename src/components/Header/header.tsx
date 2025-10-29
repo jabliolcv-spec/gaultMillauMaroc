@@ -1,12 +1,11 @@
 import styles from "./header.module.css";
 import Logo from "@/assets/GaultMillau.svg";
 import Country from "@/assets/maroc.svg";
-import IconMenu from "@/assets/menu/menu.svg";
 import Home from "@/assets/menu/home.svg";
 import News from "@/assets/menu/blog.svg";
 import Resto from "@/assets/menu/restaurant.svg";
 import Hotel from "@/assets/menu/hotel.svg";
-import Riyad from "@/assets/menu/winery.svg";
+import Riyad from "@/assets/menu/riyad.svg";
 import Artisans from "@/assets/menu/artisan.svg";
 import Recipes from "@/assets/menu/recipe.svg";
 import People from "@/assets/menu/people.svg";
@@ -14,13 +13,13 @@ import Utensils from "@/assets/menu/utensil.svg";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+
   return (
     <header className={styles.header}>
         <div className={styles.sectionHeader1}>
             <img src={Logo} alt="logo Gault et Millau" className={styles.logo}/>
             <div className={styles.divRight}>
                 <img src={Country} alt="icon maroc" className={styles.country} />
-                <img src={IconMenu} alt="icon menu" className={styles.menu} />
             </div>
         </div>
         <div className={styles.sectionHeader2}>
@@ -64,5 +63,7 @@ const Header = () => {
     </header>
   )
 }
+
+
 
 export default Header

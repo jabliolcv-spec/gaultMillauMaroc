@@ -12,7 +12,7 @@ export interface NewsCardProps {
 export const NewsCardData: NewsCardProps[] = [
     {
         id: "news-1",
-        title: "Nouveau guide Gault&Millau : cap sur le Maroc",
+        title: "Le Nouveau guide Gault&Millau Maroc",
         resume:
             "Gault&Millau poursuit son extension internationale. Un nouveau guide sera lancé dès mai 2026 pour récompenser les plus belles tables, les chefs remarquables et les prestigieux établissements du Maroc",
         slug: "nouveau-guide-gault-and-millau-cap-sur-le-maroc",
@@ -42,7 +42,7 @@ En attendant la parution de sa première édition, en mai 2026, le Guide Gault &
     },
     {
         id: "news-2",
-        title: "Gala annuel Gault&Millau",
+        title: "Gala annuel Gault & Millau",
         resume:
             "L'élite gastronomico-médiatique se donne rendez-vous chaque année lors de ce dîner pour porter un message fort en faveur de la transmission et des jeunes. Le Gala annuel Gault&Millau est un événement exceptionnel qui a pour objectif de rassembler, célébrer et récompenser les meilleurs acteurs de la gastronomie française.",
         slug: "gala-annuel-des-trophes-gaultmillau",
@@ -151,9 +151,9 @@ En attendant la parution de sa première édition, en mai 2026, le Guide Gault &
     },
     {
         id: "news-3",
-        title: "Le chef marocain Lahcen Hafid",
+        title: "Le chef  marocain Lahcen Hafid",
         resume:
-            "Chef Lahcen Hafid : Ce guide donnera une belle visibilité à nos produits du terroir et aux chefs qui les subliment.",
+            "La cuisine marocaine est une histoire de cœur, de partage et de transmission », aime-t-il rappeler. Par son travail et sa vision, le Chef Lahcen Hafid contribue à écrire un nouveau chapitre du patrimoine culinaire du Maroc, entre modernité et authenticité.",
         slug: "le-chef-marocain-Lahcen-Hafid",
         thumbId: "lahcen_hafid",
         theme: "Jeunes Talents",

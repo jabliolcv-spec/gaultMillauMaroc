@@ -5,18 +5,9 @@ import News from "../../../assets/menu/blog.svg";
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/GaultMillau.svg";
 import { useState } from "react";
-
-import communique_presse from "@/assets/communique_presse.png";
-import lahcen_hafid from "@/assets/lahcen_hafid.jpg";
-import gala from "@/assets/gala.png";
+import PlayIcon from "@/assets/play.png";
 import SmartImage from "../../SmartImage";
 
-
-const images: Record<string, string> = {
-  communique_presse,
-  lahcen_hafid,
-  gala,
-};
 
 interface NewsCardProps {
     news: {
@@ -108,8 +99,8 @@ export default function SingleNewsCard({ news }: NewsCardProps) {
                 <div className={styles.thumbnailWrapper}>
                     <div className={styles.thumbnailFrame}>
                         <SmartImage thumbId={news.thumbId} title={news.title}  width={700} height={464}/>
-                        {news.videoUrl && <button className={styles.playButton} onClick={openModal} aria-label="Lire la vidéo">
-                                     ▶
+                        {news.videoUrl && <button className={styles.playButton} onClick={openModal} aria-label="Lire la vidéo" title="Lire la vidéo">
+                            <img src={PlayIcon} alt="play video icon" width={40}/>
                         </button>
                         }
                     </div>

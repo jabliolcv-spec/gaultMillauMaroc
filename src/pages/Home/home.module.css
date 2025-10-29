@@ -40,7 +40,7 @@ margin: 0 auto;
   align-items: flex-start;
   justify-content: center;
   gap: 60px;
-  padding: 60px 40px;
+  padding: 40px;
   background: #fff;
 }
 
@@ -70,6 +70,7 @@ margin: 0 auto;
   color: #333;
   line-height: 1.6;
   position: relative;
+  text-align: justify;
 }
 
 .quoteIcon {
@@ -92,12 +93,20 @@ margin: 0 auto;
 }
 
 .underline {
-  width: 40px;
+  width: 50px;
   height: 3px;
   background-color: #ffe100;
   margin-bottom: 10px;
 }
 
+.contactLink{
+  margin-top: 15px;
+}
+.contactLink a{
+  color: #000;
+  font-weight: bold;
+  text-transform: capitalize;
+}
 .role {
   font-size: 14px;
   color: #555;

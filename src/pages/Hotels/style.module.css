@@ -19,6 +19,17 @@
     text-transform: capitalize;
 }
 
+.links a{
+    display: block;
+    padding-top: 10px;
+    margin-left: 30px;
+    color: black;
+}
+
+.links a:hover {
+  color: #ff0000;
+}
+
 .Container p{
     font-family: Montserrat, Helvetica;
     font-size: 16px;
@@ -108,9 +119,26 @@ ul li strong{
     border-radius: 10px;
 }
 
+
 @media screen and (max-width: 950px) {
   .Container{
     width: 100%;
     padding: 20px;
   }
+  
+  .Container h2{
+    font-size:40px;
+    line-height: 50px;
+    font-weight: 900;
+    font-family: var(--the-tenth-title-font-family);
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+.Container h3{
+    font-size:25px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--the-tenth-title-font-family);
+    padding: 20px 0;
+}
 }

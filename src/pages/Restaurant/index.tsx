@@ -1,6 +1,7 @@
 import Header from "../../components/Header/header";
 import style from "../style.module.css";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 const Restaurant = () => {
     return (
@@ -28,11 +29,11 @@ const Restaurant = () => {
                     </p>
 
                     <ul>
-                        <li><strong style={{background:"#83c3e6ff"}}>Sponsorisé</strong> : Bénéficient d’une exposition accrue sur nos plateformes. </li>
-                        <li><strong style={{background:"#e9f112ff"}}>1 à 2 Toques</strong> De belles tables qui témoignent d’un vrai savoir-faire et d’une cuisine maîtrisée.</li>
-                        <li><strong style={{background:"#e9f112ff"}}>3 à 4 Toques</strong> des établissements remarquables où l’émotion culinaire s’invite à chaque assiette.</li>
-                        <li><strong style={{background:"#e9f112ff"}}>5 Toques</strong> les grandes tables du Maroc, synonymes d’excellence absolue.</li>
-                        <li><strong style={{background:"#e1b105ff"}}>6 Toques</strong> Toques D'or, une distinction exceptionnelle, réservée aux chefs d’exception qui portent la gastronomie marocaine au plus haut niveau international.</li>
+                        <li><strong style={{ background: "#83c3e6ff" }}>Sponsorisé</strong> : Bénéficient d’une exposition accrue sur nos plateformes. </li>
+                        <li><strong style={{ background: "#e9f112ff" }}>1 à 2 Toques</strong> De belles tables qui témoignent d’un vrai savoir-faire et d’une cuisine maîtrisée.</li>
+                        <li><strong style={{ background: "#e9f112ff" }}>3 à 4 Toques</strong> des établissements remarquables où l’émotion culinaire s’invite à chaque assiette.</li>
+                        <li><strong style={{ background: "#e9f112ff" }}>5 Toques</strong> les grandes tables du Maroc, synonymes d’excellence absolue.</li>
+                        <li><strong style={{ background: "#e1b105ff" }}>6 Toques</strong> Toques D'or, une distinction exceptionnelle, réservée aux chefs d’exception qui portent la gastronomie marocaine au plus haut niveau international.</li>
                     </ul>
 
                     <h3>Un accompagnement sur mesure pour les restaurateurs</h3>
@@ -58,6 +59,13 @@ const Restaurant = () => {
                     <p>
                         <strong>Participez dès aujourd’hui à la grande aventure Gault&amp;Millau Maroc</strong> et contribuez à mettre en lumière l’excellence culinaire du Royaume.
                     </p>
+                    <h3>Liens Utiles</h3>
+                    <div className={style.links}>
+                        <Link to="https://www.gaultmillau.org" target="_blank">A propos</Link>
+                        <Link to="/Infos/CGV">Conditions Générales De Vente</Link>
+                        <Link to="/Infos/politique-de-confidentialite">Politique de confidentialité</Link>
+                        <a href="/media/KIT_MEDIA_GAULTMILLAU_MA.pdf" target="_blank" rel="noopener noreferrer">Le Kit Média (PDF)</a>
+                    </div>
                 </div>
             </main>
             <Footer />

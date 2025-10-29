@@ -9,6 +9,8 @@ import Artisans from "./pages/Artisans";
 import Recettes from "./pages/Recettes";
 import Talent from "./pages/Talent";
 import Utensils from "./pages/Utensils";
+import PrivacyPolicy from "./pages/Informations/PrivacyPolicy";
+import CGV from "./pages/Informations/CGV";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/Talent" element={<Talent />}/>
         <Route path="/Artisans" element={<Artisans />}/>
         <Route path="/Utensils" element={<Utensils />}/>
+        <Route path="/Infos/politique-de-confidentialite" element={<PrivacyPolicy/>}/>
+        <Route path="/Infos/CGV" element={<CGV/>}/>
         <Route path="/blog/:slug" element={<NewsDetails />}/>
         <Route path="/Restaurant" element={<Restaurant />}/>
         <Route path="*" element={<h2>Page non trouvée</h2>}/>
