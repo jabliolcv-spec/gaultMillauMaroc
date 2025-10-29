@@ -1,4 +1,3 @@
-"use client";
 
 import styles from "./card.module.css";
 import News from "../../../assets/menu/blog.svg";

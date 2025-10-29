@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import styles from "./footer.module.css";
 import Logo from "../../assets/GaultMillau.svg"; 
 import { Link } from "react-router-dom";
