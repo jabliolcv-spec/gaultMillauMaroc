@@ -75,6 +75,15 @@
     border-radius: 10px;
 }
 
+.subTitle{
+    font-size:20px;
+    width: 90%;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: var(--the-tenth-title-font-family);
+    padding: 10px 0;
+    text-transform: capitalize;
+}
 @media screen and (max-width: 950px) {
   .Container{
     width: 100%;

@@ -35,7 +35,6 @@ const Home = () => {
             <p>
               Je suis ici pour partir à la découverte des jeunes talents culinaires marocains. Nous avons choisi de nous concentrer sur le Maroc, un pays à la richesse gastronomique exceptionnelle. Notre objectif est de juger et de mettre en valeur la véritable cuisine marocaine, dans toute sa diversité et son authenticité. <div className={style.quoteIconEnd}>“</div>
             </p>
-            <div className={style.underlineBlack}></div>
             <p>
               <strong>Le Guide Gault&Millau Maroc</strong> se donne ainsi pour mission d’être bien plus qu’un simple carnet d’adresses. Il aspire à révéler et à promouvoir un panorama riche et diversifié, de centaines de restaurants dans trois grandes régions du Royaume. Chaque sélection sera rigoureusement indépendante, pensée pour guider les amateurs de haute gastronomie, les professionnels du secteur et les épicuriens à la recherche d’expériences culinaires authentiques, raffinées et innovantes.
               <br/> En attendant la parution de sa <strong>première édition, en mai 2026</strong>, le Guide Gault & Millau Maroc lancera dès le mois de novembre les premières enquêtes dans les restaurants marocains.

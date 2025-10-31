@@ -18,6 +18,7 @@ const Header = () => {
     <header className={styles.header}>
         <div className={styles.sectionHeader1}>
             <img src={Logo} alt="logo Gault et Millau" className={styles.logo}/>
+            <img src={Country} alt="icon maroc" className={styles.Logocountry} />
             <div className={styles.divRight}>
                 <img src={Country} alt="icon maroc" className={styles.country} />
             </div>
@@ -39,7 +40,7 @@ const Header = () => {
                 <img src={Hotel} alt="" className={styles.itemIcon} />
                 <span className={styles.itemText}>Hospitalité</span>
             </Link>
-            <Link to={'https://fr.gaultmillau.com/fr/search/artisan'} target="_blank" className={styles.item}>
+            <Link to={'/Artisan'} className={styles.item}>
                 <img src={Artisans} alt="" className={styles.itemIcon} />
                 <span className={styles.itemText}>Artisans</span>
             </Link>

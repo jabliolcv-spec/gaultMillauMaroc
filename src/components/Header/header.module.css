@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 
 .divRight{
@@ -24,6 +25,13 @@
     cursor: pointer;
 }
 
+.Logocountry{
+    position: absolute;
+    left: -20px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+}
 
 .logo{
     display: flex;
@@ -104,7 +112,7 @@
 }
 
 .sectionHeader1{
-    width: 100%;
+    width: 90%;
 }
 
 .logo{
@@ -112,5 +120,12 @@
     margin-left: 11px;
     width: 100%;
     max-width: 190px;
+}
+.Logocountry{
+    position: absolute;
+    left: -13px;
+    top: 15px;
+    width: 38px;
+    height: 38px;
 }
 }

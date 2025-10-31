@@ -1,0 +1,57 @@
+.mainSection{
+    width: 100%;
+    background-color: white;
+}
+
+.titleContainer {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.titleSection {
+  font-family: var(--news-card-text-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.underlineSection {
+  width: 150px;
+  height: 5px;
+  background-color: #ffe100;
+  margin: 0 auto;
+}
+
+
+.container {
+ width: 1000px;
+margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px;
+  background: #fff;
+}
+
+.videoContainer{
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+
+@media screen and (max-width: 950px) {
+  .container {
+    width: 100%;
+    padding: 0px;
+  }
+  video{
+    object-fit: contain;
+  }
+  
+}

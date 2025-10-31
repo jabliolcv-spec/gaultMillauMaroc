@@ -10,8 +10,12 @@ const NewsDetails = () => {
             <main className={style.mainSection}>
                 <div className={style.Container}>
                     <p className={style.title}>Lancement officiel du Guide Gault & Millau Maroc</p>
+                    <p className={style.subTitle}>Une célébration de l’excellence gastronomique du Royaume.</p>
                     <div className={style.tags}>
                         <span>Maroc</span> <span>Culture</span> <span>Guide Gault&Millau</span> <span>Trophées</span>
+                    </div>
+                    <div className={style.content}>
+                        <p>Dans l’univers prestigieux de la gastronomie mondiale, une nouvelle étoile brille désormais au firmament du Royaume du Maroc.</p>
                     </div>
                     <SmartImage
                         thumbId={"communique_presse"}
@@ -19,8 +23,6 @@ const NewsDetails = () => {
                         width={1000}
                         height={600}
                     />
-                    <p className={style.resume}>Le célèbre guide Gault & Millau, référence internationale de l’excellence culinaire, a officiellement lancé son édition marocaine, lundi 20 octobre au Conrad Rabat. Une première historique qui consacre le Maroc parmi les grandes nations de la haute cuisine mondiale.</p>
-                    <div className={style.underlineSection}></div>
                     <div className={style.content}>
                         <p>Le célèbre guide <strong>Gault&Millau</strong>, référence incontournable et respectée des gastronomes du monde entier, lance officiellement son édition marocaine. Une première historique qui s’inscrit comme une étape majeure dans la reconnaissance et la valorisation de la richesse culinaire marocaine.</p>
                         <p>Cet événement exceptionnel s’est déroulé le <b>lundi 20 octobre 2025 à 10h00 au Conrad Rabat</b>, palace emblématique alliant avec élégance tradition et modernité. L’établissement raffiné a offert un écrin parfait pour célébrer l’art de la table à la marocaine.</p>
