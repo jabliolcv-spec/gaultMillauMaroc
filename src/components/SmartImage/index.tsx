@@ -1,11 +1,15 @@
 import communique_presse from "@/assets/communique_presse.png";
 import lahcen_hafid from "@/assets/lahcen_hafid.jpg";
 import gala from "@/assets/gala.png";
+import bannier_guide from "@/assets/bannier_guide.png";
+import gala_bannier from "@/assets/gala_banniere.png";
 
 const images: Record<string, string> = {
   communique_presse,
   lahcen_hafid,
   gala,
+  bannier_guide,
+  gala_bannier
 };
 
 interface SmartImageProps {

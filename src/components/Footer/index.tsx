@@ -23,10 +23,10 @@ export default function Footer() {
         {/* Colonne 2 */}
         <div className={styles.column}>
           <h4>Notre sélection</h4>
-          <Link to="/Restaurant"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Restaurants</Link>
-          <Link to="/Hotels"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Hôtels</Link>
-          <Link to="/Artisans"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Artisans</Link>
-          <Link to="/Talent"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Jeunes Talent</Link>
+          <Link to="/Toques"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Toques</Link>
+          <Link to="/Hospitalite"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Hospitalité</Link>
+          <Link to="/Activity"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Activité</Link>
+          <Link to="/KitMedia"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Kit Media</Link>
         </div>
 
         {/* Colonne 3 */}
@@ -36,7 +36,7 @@ export default function Footer() {
             6ÈME ÉTAGE,<br />
             CASABLANCA, MAROC<br />
           </p>
-          <a href="mailto:sberdah@gaultmillau.ma">Contactez-nous</a>
+          <Link to="/Contact"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Contact</Link>
           <a href="tel:+212664082188">Appeler : (+212)6.64.08.21.88</a>
         </div>
 

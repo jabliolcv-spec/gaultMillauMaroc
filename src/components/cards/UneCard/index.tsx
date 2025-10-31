@@ -22,7 +22,7 @@ interface NewsCardProps {
 
 export default function SingleNewsCard({ news }: NewsCardProps) {
     const headerSubtitle = news.theme;
-    const cardHref = `/blog/${news.slug}`;
+    const cardHref = `/RevuePresse`;
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -31,9 +31,9 @@ export default function SingleNewsCard({ news }: NewsCardProps) {
 
     return (
         <article className={styles.uneCard}>
-            <a href={cardHref} aria-label={news.title} title={news.title}>
+            <Link to={cardHref} aria-label={news.title} title={news.title}>
                 <span className={styles.stretchedLink} aria-hidden="true" />
-            </a>
+            </Link>
 
             <div className={styles.cardHeader}>
                 <div className={styles.headerLeft}>
@@ -69,18 +69,14 @@ export default function SingleNewsCard({ news }: NewsCardProps) {
                     </div>
 
                     <div className={styles.cardPaddingContainer}>
-                        <span
-                            className={`${styles.synopsis}`}
-                        >
+                        <span className={`${styles.synopsis}`}>
                             {news.resume}
                         </span>
                     </div>
 
                     <div className={styles.hrSpacer} />
 
-                    <div
-                        className={`${styles.cardPaddingContainer} ${styles.buttonsContainer}`}
-                    >
+                    <div className={`${styles.cardPaddingContainer} ${styles.buttonsContainer}`}>
                         <Link
                             to={cardHref}
                             className={styles.figmaCardButton}

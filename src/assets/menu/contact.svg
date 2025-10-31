@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_contact" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .contact-cls-1 {
+        fill: #741750;
+      }
+      .contact-cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <!-- Fond vert -->
+  <path class="contact-cls-1" d="M168.75,0l262.5.27c93.2.1,168.75,75.69,168.75,168.85v262.38c0,93.16-75.55,168.6-168.75,168.5l-262.5-.27C75.55,599.63,0,524.04,0,430.88V168.5C0,75.35,75.55-.09,168.75,0Z"/>
+  
+  <!-- Icône contact (enveloppe) blanche -->
+  <path class="contact-cls-2" d="M460,180H140c-22.09,0-40,17.91-40,40v160c0,22.09,17.91,40,40,40h320c22.09,0,40-17.91,40-40V220c0-22.09-17.91-40-40-40Zm0,30v10l-160,95L140,220v-10h320Zm0,180H140V250l160,95,160-95v140Z"/>
+</svg>

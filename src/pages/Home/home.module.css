@@ -47,6 +47,7 @@ margin: 0 auto;
 .videoContainer{
   width: 1000px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 
@@ -74,9 +75,16 @@ margin: 0 auto;
 }
 
 .quoteIcon {
-  font-size: 50px;
-  color: #ccc;
+  font-size: 30px;
+  color: #818181;
   line-height: 0.5;
+}
+
+.quoteIconEnd{
+  font-size: 30px;
+  color: #818181;
+  line-height: 1;
+  display: inline;
 }
 
 .title {
@@ -99,13 +107,11 @@ margin: 0 auto;
   margin-bottom: 10px;
 }
 
-.contactLink{
-  margin-top: 15px;
-}
-.contactLink a{
-  color: #000;
-  font-weight: bold;
-  text-transform: capitalize;
+.underlineBlack{
+  width: 50px;
+  height: 3px;
+  background-color: #000000;
+  margin-bottom: 10px;
 }
 .role {
   font-size: 14px;

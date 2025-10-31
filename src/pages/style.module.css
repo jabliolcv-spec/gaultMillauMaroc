@@ -37,12 +37,12 @@
 }
 
 
-ul li{
+.Container ul li{
     list-style-type: none;
     margin-left: 50px;
     padding: 10px 0;
 }
-ul li strong{
+.Container ul li strong{
     padding: 5px;
     border-radius: 10px;
 }

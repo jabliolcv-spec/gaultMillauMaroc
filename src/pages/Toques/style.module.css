@@ -1,0 +1,226 @@
+.mainSection {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.Container1,
+.Container2, .Container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.Container1 .contentLeft {
+    width: 800px;
+    font-family: var(--GMI-font, 'Georgia', serif);
+    line-height: 1.6;
+    border-left: 3px solid #ffd500;
+    /* ligne jaune */
+    padding-left: 20px;
+}
+
+.Container1 .contentLeft h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Container1 .contentLeft ul {
+    padding-left: 10px;
+}
+
+.Container1 .contentLeft li {
+    font-family: Montserrat, Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding: 10px 0;
+    text-align: justify;
+    list-style-type: disc;
+}
+
+/* --- Partie droite --- */
+.Container1 .contentRight {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container1 .contentRight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* --- Ligne 2 --- */
+
+.Container2 {
+    margin-top: 40px;
+}
+
+.Container2 .contentLeft {
+    width: 400px;
+    height: 350px;
+}
+
+.Container2 .contentRight h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Container2 .contentRight ul {
+    padding-left: 10px;
+}
+
+.Container2 .contentRight li {
+    font-family: Montserrat, Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding: 10px 0;
+    text-align: justify;
+    list-style-type: disc;
+}
+
+.Container2 .contentRight {
+    width: 600px;
+    line-height: 1.6;
+    border-left: 3px solid #ffd500;
+    /* ligne jaune */
+    padding-left: 20px;
+}
+
+.Container2 .contentLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Ligne 3 --- */
+
+.Container3 {
+    margin-top: 40px;
+}
+
+.Container3 .contentLeft {
+    width: 300px;
+    height: 520px;
+}
+
+.Container3 .contentRight h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Container3 .contentRight ul {
+    padding-left: 10px;
+}
+
+.Container3 .contentRight li {
+    font-family: Montserrat, Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding: 10px 0;
+    text-align: justify;
+    list-style-type: disc;
+}
+
+.Container3 .contentRight {
+    width: 700px;
+    line-height: 1.6;
+    border-left: 3px solid #ffd500;
+    /* ligne jaune */
+    padding-left: 20px;
+}
+
+.Container3 .contentLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 950px) {
+    .mainSection {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .Container1 ul, .Container2 ul {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .Container1, .Container2, .Container3 {
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .Container1 .contentRight {
+        width: 100%;
+        height: 400px;
+        order: 1;
+    }
+    
+
+    .Container1 .contentLeft {
+        width: 100%;
+        order: 2;
+        border-left: none;
+        border-left: 3px solid #ffd500;
+        margin-left: 10px;
+    }
+
+    .Container1 .contentRight img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .Container2 .contentLeft {
+        width: 100%;
+        height: 400px;
+    }
+    .Container2 .contentLeft img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .Container2 .contentRight {
+        width: 100%;
+        order: 2;
+        border-left: none;
+        border-left: 3px solid #ffd500;
+        margin-left: 10px;
+    }
+    .Container3 .contentLeft {
+        width: 100%;
+        height: 400px;
+        order: 1;
+    }
+    .Container3 .contentLeft img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .Container3 .contentRight {
+        width: 100%;
+        order: 2;
+        border-left: none;
+        border-left: 3px solid #ffd500;
+        margin-left: 10px;
+    }
+}

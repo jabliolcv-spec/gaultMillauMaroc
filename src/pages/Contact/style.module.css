@@ -1,0 +1,166 @@
+.mainSection {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.Container,
+.Container2 {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: white;
+}
+
+
+.titleContainer {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.titleSection {
+    font-family: var(--news-card-text-font-family);
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.underlineSection {
+    width: 150px;
+    height: 5px;
+    background-color: #ffe100;
+    /* jaune Gault&Millau */
+    margin: 0 auto;
+}
+
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+
+
+.kitMedia {
+    color: black;
+    background-color: #ffe100;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    width: auto;
+    max-width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+.Container,
+.Container2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.Container .contentLeft {
+    width: 50%;
+    height: 300px;
+}
+
+.Container .contentRight h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Container .contentRight ul {
+    padding-left: 30px;
+}
+
+.Container .contentRight li {
+    font-family: Montserrat, Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding: 10px 0;
+    text-align: justify;
+    list-style-type: none;
+}
+
+.Container .contentRight {
+    width: 50%;
+    line-height: 1.6;
+    border-left: 3px solid #ffd500;
+    padding-left: 20px;
+}
+
+.Container .contentLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .Container {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .Container ul {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .Container {
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .Container .contentRight {
+        width: 100%;
+        height: auto;
+        margin: 40px 0;
+    }
+
+    .Container .contentLeft {
+        width: 100%;
+        border-left: none;
+        margin-left: 10px;
+    }
+
+    .Container .contentRight img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .containerImg {
+        padding: 10px;
+        width: 100%;
+        height: 100px;
+    }
+
+    .titleSection {
+        font-size: 30px;
+    }
+}

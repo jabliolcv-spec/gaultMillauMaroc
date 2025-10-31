@@ -5,11 +5,11 @@ import Home from "@/assets/menu/home.svg";
 import News from "@/assets/menu/blog.svg";
 import Resto from "@/assets/menu/restaurant.svg";
 import Hotel from "@/assets/menu/hotel.svg";
-import Riyad from "@/assets/menu/riyad.svg";
 import Artisans from "@/assets/menu/artisan.svg";
-import Recipes from "@/assets/menu/recipe.svg";
-import People from "@/assets/menu/people.svg";
-import Utensils from "@/assets/menu/utensil.svg";
+import Contact from "@/assets/menu/contact.svg";
+import KitMedia from "@/assets/menu/kitMedia.svg";
+import Activity from "@/assets/menu/activity.svg";
+
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -27,37 +27,33 @@ const Header = () => {
                 <img src={Home} alt="" className={styles.itemIcon} />
                 <span className={styles.itemText}>Acceuil</span>
             </Link>
-            <Link to={'/blog'} className={styles.item}>
+            <Link to={'/RevuePresse'} className={styles.item}>
                 <img src={News} alt="" className={styles.itemIcon} />
-                <span className={styles.itemText}>Actualités</span>
+                <span className={styles.itemText}>Revue De Presse</span>
             </Link>
-            <Link to={'/Restaurant'} className={styles.item}>
+            <Link to={'/Toques'} className={styles.item}>
                 <img src={Resto} alt="" className={styles.itemIcon} />
-                <span className={styles.itemText}>Restaurants</span>
+                <span className={styles.itemText}>Les Toques</span>
             </Link>
-            <Link to={'/Hotels'} className={styles.item}>
+            <Link to={'/Hospitalite'} className={styles.item}>
                 <img src={Hotel} alt="" className={styles.itemIcon} />
-                <span className={styles.itemText}>Hotels</span>
+                <span className={styles.itemText}>Hospitalité</span>
             </Link>
-            <Link to={'/Riyad'} className={styles.item}>
-                <img src={Riyad} alt="" className={styles.itemIcon} />
-                <span className={styles.itemText}>Riyad</span>
-            </Link>
-            <Link to={'/Artisans'} className={styles.item}>
+            <Link to={'https://fr.gaultmillau.com/fr/search/artisan'} target="_blank" className={styles.item}>
                 <img src={Artisans} alt="" className={styles.itemIcon} />
                 <span className={styles.itemText}>Artisans</span>
             </Link>
-            <Link to={'/Recettes'} className={styles.item}>
-                <img src={Recipes} alt="" className={styles.itemIcon} />
-                <span className={styles.itemText}>Recettes</span>
+            <Link to={'/Activity'} className={styles.item}>
+                <img src={Activity} alt="" className={styles.itemIcon} />
+                <span className={styles.itemText}>Activités</span>
             </Link>
-            <Link to={'/Talent'} className={styles.item}>
-                <img src={People} alt="" className={styles.itemIcon} />
-                <span className={styles.itemText}>Talent</span>
+            <Link to={'/KitMedia'} className={styles.item}>
+                <img src={KitMedia} alt="" className={styles.itemIcon} />
+                <span className={styles.itemText}>Kit Média</span>
             </Link>
-            <Link to={'/Utensils'} className={styles.item}>
-                <img src={Utensils} alt="" className={styles.itemIcon} />
-                <span className={styles.itemText}>Utensils</span>
+            <Link to={'/Contact'} className={styles.item}>
+                <img src={Contact} alt="" className={styles.itemIcon} />
+                <span className={styles.itemText}>Contact</span>
             </Link>
         </div>
     </header>
